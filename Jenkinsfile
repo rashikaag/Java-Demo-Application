@@ -42,7 +42,7 @@ node{
          
        
     
-       
+      /* 
       // ********* For AWS Cluster**************************
       stage('Deploy'){
          def k8Apply= "kubectl apply -f deployment.yaml" 
@@ -51,6 +51,6 @@ node{
              sh "sshpass -p ${k8PWD} scp -r deployment.yaml devops@54.196.52.131:/home/devops" 
              sh "sshpass -p ${k8PWD} ssh -o StrictHostKeyChecking=no devops@54.196.52.131 ${k8Apply}"
          }
-       }
+       }*/
         
   }
